@@ -1,4 +1,19 @@
 def get_input(input_file: str='Inputs/Day2_Inputs.txt') -> list:
+    """
+    Parses an input file to extract a series of lines of instructions.
+
+    Parameters
+    ----------
+    input_file : str, optional
+        Input file containing the instructions.
+        The default is 'Inputs/Day2_Inputs.txt'.
+
+    Returns
+    -------
+    instructions : list
+        Extracted list of instructions.
+
+    """
     # Parse input file and split instructions into list
     with open(input_file) as f:
         instructions = [line.strip() for line in f.readlines()]
